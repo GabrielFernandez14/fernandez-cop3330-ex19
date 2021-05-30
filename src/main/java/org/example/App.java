@@ -5,6 +5,8 @@
  */
 
 package org.example;
+
+// Import necessary libraries
 import java.util.Scanner;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
