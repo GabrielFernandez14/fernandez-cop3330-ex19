@@ -51,13 +51,10 @@ public class App
         Scanner sc = new Scanner(System.in);
         System.out.println(prompt);
 
-        // Unfortunately, if the user decides to input multiple strings
-        // the while loop will output this message for the amount of strings
-        // inputted, but still works in the sense that it does not allow the user
-        // to continue until an integer is inputted
+        // Loop until the user inputs an integer
         while (!sc.hasNextDouble()) {
             System.out.println("Sorry, you must enter a number, please try again.");
-            sc.next();
+            sc.nextLine();
         }
 
         // If we have exited the while loop, that means we had an integer
